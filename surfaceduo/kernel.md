@@ -1,4 +1,6 @@
-# Building Surface Duo Kernel
+# Building Surface Duo Kernel (Compatibility for TWRP)
+
+This project aims to make the kernel line of products compatible with TWRP.
 
 ## Install Ubuntu 18.04
 (These steps were built off of the default Azure Virtual Machine running Ubuntu 18.04 LTS Server; however many of us use Ubuntu Desktop
@@ -40,11 +42,12 @@ Create folder to download the repos to
 mkdir ~/repo
 ```
 
-Setup source
+Setup source from TWRP and here
 
 ```
 cd ~/repo
-repo init -u https://github.com/microsoft/surface-duo-oss-kernel.manifest -b *BRANCH*
+repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+git clone https://github.com/JengaMasterG/surface-duo-oss-kernel.manifest -b *BRANCH*
 repo sync
 ```
 
