@@ -47,7 +47,7 @@ Setup source from TWRP and here
 ```
 cd ~/repo
 repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
-git clone https://github.com/JengaMasterG/twrp-surface-duo-oss-kernel.manifest -b *BRANCH*
+git clone https://github.com/JengaMasterG/twrp-surface-duo-oss-kernel.manifest -b *BRANCH* .repo/manifests/local_manifests/
 repo sync
 ```
 
